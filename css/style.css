@@ -1,0 +1,161 @@
+body{
+    background: #ebefff;
+}
+
+.logo{
+    position: absolute;
+    width: 31px;
+    height: 48px;
+    left: 84px;
+    top: 40px;
+}
+
+.input{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    left: 240px;
+    top: 168px;
+    resize: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+
+    color: #0A3871;
+    background: #ebefff;
+}
+
+.box{
+    position: absolute;
+    width: 400px;
+    height: 850px;
+    left: 1400px;
+    top: 40px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.pri-text{
+    position: absolute;
+    width: 336px;
+    height: 58px;
+    left: 8%;
+    top: 57%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #343A40;
+}
+
+.sub-text{
+    position: absolute;
+    width: 336px;
+    height: 58px;
+    left: 8%;
+    top: 66%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #495057;
+}
+
+.search{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 13%;
+    top: 20%;
+}
+
+.legend{
+    position: absolute;
+    width: 205px;
+    height: 18px;
+    left: 264px;
+    top: 700px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.encriptar{
+    position: absolute;
+    left: 240px;
+    top: 750px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #ebefff;
+}
+
+.desencriptar{
+    position: absolute;
+    left: 590px;
+    top: 750px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #D8DFE8;
+    border-radius: 24px;
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #0A3871;
+}
