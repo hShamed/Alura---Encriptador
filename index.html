@@ -16,10 +16,10 @@
     </header>
 
     <main>
-        <textarea class="input" placeholder="Ingrese el texto aquí" autofocus></textarea>
+        <textarea id="input" placeholder="Ingrese el texto aquí" autofocus></textarea>
     </main>
 
-    <aside class="box">
+    <aside id="box">
         <img src="/Primero/img/null.jpg" alt="Ningún mensaje fue encontrado" class="search">
         <p class="pri-text">Ningún mensaje fue encontrado</p>
         <p class="sub-text">Ingresa el texto que desees encriptar o desencriptar</p>
@@ -28,8 +28,10 @@
     <footer>
         <p class="legend">Solo letras minúsculas y sin acentos</p>
 
-        <button class="encriptar">Encriptar</button>
+        <button class="encriptar" onclick="seleccionar()">Encriptar</button>
         <button class="desencriptar">Desencriptar</button>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
