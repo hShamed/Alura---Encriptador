@@ -12,10 +12,10 @@ body{
 
 #input{
     position: absolute;
-    width: 1000px;
-    height: 500px;
-    left: 240px;
-    top: 168px;
+    width: 55%;
+    height: 50%;
+    left: 10%;
+    top: 20%;
     resize: none;
 
     font-family: 'Inter';
@@ -31,8 +31,8 @@ body{
 
 #box{
     position: absolute;
-    width: 400px;
-    height: 850px;
+    width: 20%;
+    height: 74%;
     left: 1400px;
     top: 40px;
 
@@ -41,7 +41,7 @@ body{
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 
-    padding: 50px 35px;
+    padding: 50px 35px 5%;
 
     font-family: 'Inter';
     font-style: normal;
@@ -88,12 +88,48 @@ body{
     top: 20%;
 }
 
+.copiar{
+    position: absolute;
+    left: 14%;
+    top: 85%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #FFFFFF;
+    border-radius: 24px;
+    border-color: #0A3871;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #0A3871;
+}
+
+.copiar:hover{
+    cursor: pointer;
+
+    background-color: #475361;
+
+    color: #FFFFFF;
+
+    transition: 0.5s;
+}
+
 .legend{
     position: absolute;
     width: 205px;
     height: 18px;
-    left: 264px;
-    top: 700px;
+    left: 11%;
+    top: 80%;
 
     font-family: 'Inter';
     font-style: normal;
@@ -112,8 +148,8 @@ body{
 
 .encriptar{
     position: absolute;
-    left: 240px;
-    top: 750px;
+    left: 10%;
+    top: 85%;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
@@ -136,10 +172,18 @@ body{
     color: #ebefff;
 }
 
+.encriptar:hover{
+    cursor: pointer;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 4px 20px #0f498f;
+}
+
 .desencriptar{
     position: absolute;
-    left: 590px;
-    top: 750px;
+    left: 30%;
+    top: 85%;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
@@ -160,4 +204,12 @@ body{
     text-align: center;
 
     color: #0A3871;
+}
+
+.desencriptar:hover{
+    cursor: pointer;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 4px 20px #a8aeb6;
 }
