@@ -88,7 +88,7 @@ body{
     top: 20%;
 }
 
-.copiar{
+#copiar{
     position: absolute;
     left: 14%;
     top: 85%;
@@ -114,7 +114,7 @@ body{
     color: #0A3871;
 }
 
-.copiar:hover{
+#copiar:hover{
     cursor: pointer;
 
     background-color: #475361;

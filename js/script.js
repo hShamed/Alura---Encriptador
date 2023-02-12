@@ -5,7 +5,7 @@ function encriptar(){
     texto = document.getElementById("input").value;
 
     texto = texto.replaceAll("e", "enter");
-    texto = texto.replaceAll("i", "ines");
+    texto = texto.replaceAll("i", "imes");
     texto = texto.replaceAll("a", "ai");
     texto = texto.replaceAll("o", "ober");
     texto = texto.replaceAll("u", "ufat");
@@ -17,7 +17,7 @@ function desencriptar(){
     texto = document.getElementById("input").value;
 
     texto = texto.replaceAll("enter", "e");
-    texto = texto.replaceAll("ines", "i");
+    texto = texto.replaceAll("imes", "i");
     texto = texto.replaceAll("ai", "a");
     texto = texto.replaceAll("ober", "o");
     texto = texto.replaceAll("ufat", "u");
@@ -25,36 +25,19 @@ function desencriptar(){
     incrustar(texto);
 }
 
-function incrustar(texto){
-    if(texto == ""){
+function incrustar(textos){
+    if(textos == ""){
         areaMostrada.innerHTML = "<img src='/Primero/img/null.jpg' alt='Ningún mensaje fue encontrado' class='search'>" +
                                     "<p class='pri-text'>Ningún mensaje fue encontrado</p>" +
                                     "<p class='sub-text'>Ingresa el texto que desees encriptar o desencriptar</p>";
     } else{
-        areaMostrada.innerHTML = texto +
-                                    "<button class='copiar' onclick='copiar()'>Copiar</button>";
+        areaMostrada.innerHTML = "<p class='text'>" + textos + "</p>" +
+                                "<button id='copiar' onclick='copiar()'>Copiar</button>";
     }
 
-    texto = "";
+    document.getElementById("input").value = "";
 }
-/*
-function copiar(texto){
-    // Crea un campo de texto "oculto"
-    var aux = document.createElement("oculto");
 
-    // Asigna el contenido del elemento especificado al valor del campo
-    aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
-
-    // Añade el campo a la página
-    document.body.appendChild(aux);
-
-    // Selecciona el contenido del campo
-    aux.select();
-
-    // Copia el texto seleccionado
-    document.execCommand("copy");
-
-    // Elimina el campo de la página
-    document.body.removeChild(aux);
+function copiar(){
+    navigator.clipboard.writeText(texto);
 }
-*/
