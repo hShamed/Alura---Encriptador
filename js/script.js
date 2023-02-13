@@ -1,3 +1,4 @@
+// LÓGICA DE ENCRIPTACIÓN
 var texto;
 var areaMostrada = document.getElementById("box");
 
@@ -27,17 +28,36 @@ function desencriptar(){
 
 function incrustar(textos){
     if(textos == ""){
-        areaMostrada.innerHTML = "<img src='/Primero/img/null.jpg' alt='Ningún mensaje fue encontrado' class='search'>" +
+        areaMostrada.innerHTML =    "<div id='wallpaper'></div>" +
                                     "<p class='pri-text'>Ningún mensaje fue encontrado</p>" +
                                     "<p class='sub-text'>Ingresa el texto que desees encriptar o desencriptar</p>";
+    
+    
     } else{
-        areaMostrada.innerHTML = "<p class='text'>" + textos + "</p>" +
-                                "<button id='copiar' onclick='copiar()'>Copiar</button>";
+        areaMostrada.innerHTML =    "<p class='text'>" + textos + "</p>" +
+                                    "<button class='copiar' onclick='copiar()'>Copiar</button>";
+    
     }
 
-    document.getElementById("input").value = "";
+    document.getElementById("input").value = "";   
 }
 
 function copiar(){
     navigator.clipboard.writeText(texto);
+}
+
+// TEMAS
+const body = document.querySelector("body");
+const header = document.querySelector("header");
+const btn = document.querySelector("header div");
+
+const ta = document.querySelector("main textarea");
+
+function cambiarTema(){
+    let tex = document.getElementById("input").value;
+
+    body.classList.toggle("dark");
+    header.classList.toggle("header-dark")
+    btn.classList.toggle("botonT-dark");
+    ta.classList.toggle("cajaEntrada-dark");
 }

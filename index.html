@@ -11,16 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
-        <img src="/Primero/img/logoB.png" alt="Logo" class="logo">
+    <header class="header-white">
+        <div class="botonT" onclick="cambiarTema()">        
+        </div>
     </header>
 
     <main>
-        <textarea id="input" placeholder="Ingrese el texto aquí" autofocus></textarea>
+        <textarea id="input" class="cajaEntrada" placeholder="Ingrese el texto aquí" autofocus></textarea>
     </main>
 
-    <aside id="box">
-        <img src="/Primero/img/null.jpg" alt="Ningún mensaje fue encontrado" class="search">
+    <aside id="box" class="cajaSalida">
+        <div id="wallpaper"></div>
         <p class="pri-text">Ningún mensaje fue encontrado</p>
         <p class="sub-text">Ingresa el texto que desees encriptar o desencriptar</p>
     </aside>
@@ -30,6 +31,10 @@
 
         <button class="encriptar" onclick="encriptar()">Encriptar</button>
         <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+
+        <div class="foot">
+            <p>Sitio Web hecho por H. Shamed A. R.  -  2023</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>

@@ -1,13 +1,54 @@
+/*
+    CLARO
+*/
 body{
     background: #ebefff;
 }
 
-.logo{
+.header-white{
     position: absolute;
-    width: 31px;
-    height: 48px;
-    left: 84px;
+    width: 30px;
+    height: 50px;
+    left: 40px;
     top: 40px;
+    
+    background-image:url("/Primero/img/logoB.png");
+    background-repeat: no-repeat;
+    background-size: 30px 50px;
+    background-position: center;
+}
+
+.botonT{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: -7px;
+    top: 70px;
+
+    background: #0A3871;
+    background-image:url("/Primero/img/moonB.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    padding: 0;
+}
+
+.botonT:hover{
+    cursor: pointer;
+
+    background-color: #FFFFFF;
+    background-image:url("/Primero/img/moon.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+
+    box-shadow: 0 4px 30px #041428;
+
+    transition: 0.8s;
 }
 
 #input{
@@ -24,7 +65,9 @@ body{
     font-size: 32px;
     line-height: 150%;
     border: none;
+}
 
+.cajaEntrada{
     color: #072851;
     background: #ebefff;
 }
@@ -36,11 +79,6 @@ body{
     left: 1400px;
     top: 40px;
 
-    background: #FFFFFF;
-
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-
     padding: 50px 35px 5%;
 
     font-family: 'Inter';
@@ -49,17 +87,34 @@ body{
     font-size: 22px;
     line-height: 120%;
 
-    color: #495057;
-
     text-align: left;
+}
+
+.cajaSalida{
+    background: #FFFFFF;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    color: #495057;
+}
+
+#wallpaper{
+    width: 100%;
+    height: 100%;
+
+    background-image:url(/Primero/img/null.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: center;
 }
 
 .pri-text{
     position: absolute;
     width: 336px;
     height: 58px;
-    left: 8%;
-    top: 57%;
+    left: 59px;
+    top: 650px;
 
     font-size: 24px;
 
@@ -72,23 +127,15 @@ body{
     position: absolute;
     width: 336px;
     height: 58px;
-    left: 8%;
-    top: 66%;
+    left: 59px;
+    top: 720px;
 
     font-size: 16px;
 
     text-align: center;
 }
 
-.search{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 13%;
-    top: 20%;
-}
-
-#copiar{
+.copiar{
     position: absolute;
     left: 14%;
     top: 85%;
@@ -114,7 +161,7 @@ body{
     color: #0A3871;
 }
 
-#copiar:hover{
+.copiar:hover{
     cursor: pointer;
 
     background-color: #475361;
@@ -212,4 +259,84 @@ body{
     transform: scale(1.05);
 
     box-shadow: 0 4px 20px #a8aeb6;
+}
+
+.foot{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 100%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+
+    background-color: #aabed3;
+
+    color: #626881;
+}
+
+.foot p{
+    padding: 20px 0 0 0px;
+
+    text-align: center;
+}
+
+/*
+    OSCURO
+*/
+
+.dark{
+    background: #041428;
+}
+
+.header-dark{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    left: 40px;
+    top: 40px;
+    
+    background-image:url("/Primero/img/logoN.png");
+    background-repeat: no-repeat;
+    background-size: 30px 50px;
+    background-position: center;
+}
+
+.botonT-dark{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: -7px;
+    top: 70px;
+
+    background: #FFFFFF;
+    background-image:url("/Primero/img/sun.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    padding: 0;
+}
+
+.botonT-dark:hover{
+    cursor: pointer;
+
+    background-color: #0A3871;
+    background-image:url("/Primero/img/sunB.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+
+    box-shadow: 0 1px 15px #ebefff;
+
+    transition: 0.8s;
+}
+
+.cajaEntrada-dark{
+    color: #ebefff;
+    background: #041428;
 }
